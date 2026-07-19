@@ -119,30 +119,51 @@
     line-height:1.7;
   }
   .glossary b{color:var(--text);}
+  .payout-note{
+    max-width:100%;
+    margin:0 0 16px;
+    padding:10px 16px;
+    background:#eaf2ff;
+    border:1.5px solid #2563eb;
+    border-radius:10px;
+    text-align:center;
+    font-size:13px;
+    font-weight:800;
+    color:#1743c4;
+    line-height:1.6;
+    animation:blinkNote 1.3s ease-in-out infinite;
+  }
+  @keyframes blinkNote{
+    0%,100%{opacity:1;}
+    50%{opacity:0.35;}
+  }
   .contact-box{
     background:linear-gradient(135deg,var(--blue) 0%,var(--blue-light) 100%);
     color:#fff;
     border-radius:14px;
-    padding:18px 22px;
+    padding:20px 22px;
     margin-top:22px;
     text-align:center;
-    box-shadow:0 4px 20px rgba(18,48,107,0.15);
+    box-shadow:0 4px 20px rgba(18,48,107,0.25);
   }
   .contact-box .title{
-    font-size:13px;
-    font-weight:700;
+    font-size:14px;
+    font-weight:800;
     text-transform:uppercase;
-    letter-spacing:0.6px;
-    opacity:0.85;
-    margin-bottom:8px;
+    letter-spacing:0.8px;
+    color:#fff;
+    opacity:0.95;
+    margin-bottom:10px;
   }
   .contact-box .line{
-    font-size:15px;
-    margin:4px 0;
+    font-size:15.5px;
+    font-weight:600;
+    color:#fff;
+    margin:6px 0;
   }
   .contact-box a{
     color:#fff;
-    font-weight:700;
+    font-weight:800;
     text-decoration:underline;
   }
   #suggestions{
@@ -319,6 +340,7 @@
 
   <div id="results" class="results">
     <div class="bank-title" id="bankTitle"></div>
+    <div class="payout-note">⚠ THE MENTIONED PAYOUT IS ONLY FOR END TO END WITHOUT SERVICE. IF SERVICE IS DONE BY OUR RM, AN ADDITIONAL 0.25% WILL BE DEDUCTED FROM THE PAYOUT.</div>
     <div class="legend" id="legend"></div>
     <div id="resultBody"></div>
   </div>
